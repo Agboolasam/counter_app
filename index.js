@@ -8,8 +8,16 @@
       new_counts.innerText = counts;
   }
 
+function clear(){
+
+new_counts.innerText = 0;
+
+}
+
   function store() {
       prevCount.innerText = "Previous count is" + " " + counts;
-      new_counts.innerText = 0;
+     clear()
 
   }
+
+
