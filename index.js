@@ -7,19 +7,25 @@ let saveBtn = document.getElementById("Save-btn");
       counts = counts + 1;
       console.log(counts);
       new_counts.innerText = counts;
-      saveBtn.disabled = False;
+    toggle()
+     
   }
-
 function clear(){
-
     counts = 0;
     new_counts.innerText = counts;
-    saveBtn.disabled = True;
+}
+function toggle(){
+    if(counts != 0){
+        saveBtn.disabled = false;
+    }else {
+        saveBtn.disabled = true;
+    }
 }
 
   function store() {
       prevCount.innerText = "Previous count is" + " " + counts;
-     clear()
+     clear();
+    toggle();
   }
 
 
