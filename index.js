@@ -10,7 +10,9 @@
 
 function clear(){
 
-new_counts.innerText = 0;
+    counts = 0;
+
+     new_counts.innerText = counts;
 
 }
 
