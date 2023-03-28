@@ -10,6 +10,6 @@
 
   function store() {
       prevCount.innerText = "Previous count is" + " " + counts;
-
+      counts = 0;
 
   }
